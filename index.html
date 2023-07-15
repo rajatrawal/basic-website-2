@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumi Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <div class="logo-div">
+
+                    <div class="logo">
+                        
+                        bhumi cafe
+                    </div>
+                    <a href="#" class="menu_icon " onclick="slideShow()"><i class="fa fa-bars"></i></a>
+                </div>
+                <ul class="main-nav animate__animated animate__slideInDown" id="main-nav">
+                    <li><a href="#" class="active">delivery</a></li>
+                    <li><a href="#">how to order</a></li>
+                    <li><a href="#">check more</a></li>
+                    <li><a href="#">sign up</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+        <main>
+            <h1>welcome to <span class="color_change"> bhumi cafe</span>.
+                <br>house of cake lover !
+            </h1>
+            <div class="btn-div">
+                <a href="#" class="btn btn-full">click to order</a>
+                <a href="#" class="btn btn-half">show me more</a>
+            </div>
+        </main>
+    </header>
+    <script>
+        let navBar=document.getElementById("main-nav");
+        navBar.style.top ="-25rem";
+        function slideShow (){
+            if (navBar.style.top=="-25rem"){
+                console.log("fdkjf");
+                navBar.style.top="0";
+            }
+            else{
+                navBar.style.top="-25rem";
+            }
+        }
+    </script>
+</body>
+
+</html>
